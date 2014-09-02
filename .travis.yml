@@ -1,0 +1,15 @@
+language: python
+python:
+  - "2.7"
+virtualenv:
+  system_site_packages: true
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install python-numpy python-scipy python-imaging python-opencv python-pyside python-qt4 libopencv-dev ffmpeg --fix-missing
+install:
+  - "pip2 install -r requirements.txt"
+  - "pip2 install flake8"
+script:
+  - python2 -m flake8 --ignore="E721" --exclude="SeaGoatVision/server/cpp/cpp_code.py,SeaGoatVision/server/cpp/create_module.py" SeaGoatVision
+notifications:
+  email: false
