@@ -1,5 +1,4 @@
-.. image:: https://travis-ci.org/sampsyo/beets.svg?branch=master
-	:target: https://travis-ci.org/seagoatvision/seagoatvision
+[![Build Status](https://travis-ci.org/seagoatvision/seagoatvision.svg?branch=develop)](https://travis-ci.org/seagoatvision/seagoatvision)
 
 SeaGoatVision
 =============
